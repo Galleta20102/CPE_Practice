@@ -8,3 +8,5 @@ insert : mapName[index] = data;
 map<dataType, dataType>::iterator iter;
 for(iter=mapName.begin();iter!=mapName.end();iter++)
 index為iter->first，data為iter->second
+
+找出string中的index可用string.find('string',起始位址(0));
