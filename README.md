@@ -15,3 +15,11 @@
 # cout << fixed << setprecision(4) << 0.12345
 # Output : 0.1235
 
+# 用指標宣告二維陣列
+# int** arr = new int*[m];
+# for(int i=0;i<m;i++)
+#   arr[i] = new int*[n];
+# 別忘了釋放位址
+# for(int i=0;i<m;i++)
+#   delete [] *(arr+i);
+# delete [] arr;
