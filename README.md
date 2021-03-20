@@ -23,3 +23,6 @@
 # for(int i=0;i<m;i++)
 #   delete [] *(arr+i);
 # delete [] arr;
+
+# 將值以特定進制轉換為十進制
+# strtol(char[], NULL, int base);
