@@ -37,13 +37,12 @@ int main(){
 				s_ans.push_back(Eng[flag]);
 				flag = (flag == 3)? 0 : flag+1;
 			}
-		}
-		
-		for(int o=s_ans.size()-1;o>=0;o--){
-			cout<<i_ans[o+1]<<" "<<s_ans[o]<<" ";
-		}
-		cout<<i_ans[0]<<endl;
-		i_ans.clear();
-		s_ans.clear();
+			for(int o=s_ans.size()-1;o>=0;o--){
+				cout<<i_ans[o+1]<<" "<<s_ans[o]<<" ";
+			}
+			cout<<i_ans[0]<<endl;
+			i_ans.clear();
+			s_ans.clear();
+			}
 	}
 }
