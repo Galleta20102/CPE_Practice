@@ -23,7 +23,7 @@ int main(){
 			cout<<str<<endl;
 		else{
 			int i=str.length()-2,flag=0;
-			i_ans.push_back(twoDigitInt(str,2));
+			i_ans.push_back(twoDigitInt(str,str.length()-2));
 			while(i>0){
 				if(i-2>=0 && flag!=0){
 					i-=2;
@@ -37,12 +37,16 @@ int main(){
 				s_ans.push_back(Eng[flag]);
 				flag = (flag == 3)? 0 : flag+1;
 			}
+			
 			for(int o=s_ans.size()-1;o>=0;o--){
-				cout<<i_ans[o+1]<<" "<<s_ans[o]<<" ";
+				if(i_ans[o+1]!=0)
+					cout<<i_ans[o+1]<<" "<<s_ans[o]<<" ";
 			}
-			cout<<i_ans[0]<<endl;
+			if(i_ans[0]!=0)
+				cout<<i_ans[0]<<endl;
 			i_ans.clear();
 			s_ans.clear();
-			}
+		}
+		
 	}
 }

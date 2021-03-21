@@ -11,8 +11,7 @@ int main(){
 		for(int i=0;i<n;i++){
 			char c;
 			int ans=1,num;
-			cin>>c>>c>>c;
-			num = c -'0';
+			cin>>c>>c>>num;
 			int** m = new int*[num];
 			for(int j=0;j<num;j++){
 				m[j] = new int[num];
@@ -22,7 +21,6 @@ int main(){
 					cin>>m[j][k];
 				}
 			}
-			
 			for(int j=0;j<num;j++){
 				for(int k=0;k<num;k++){
 					if(m[j][k] != m[num-j-1][num-k-1]){

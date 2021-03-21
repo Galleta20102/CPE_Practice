@@ -7,9 +7,9 @@
 using namespace std;
 
 int main(){
-	int S,D;
+	long long int S,D;
 	while(cin>>S>>D){
-		int people=0;
+		long long int people=0;
 		while(people<D){
 			people+=S;
 			S++;
