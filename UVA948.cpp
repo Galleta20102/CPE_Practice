@@ -16,9 +16,9 @@ int f(int num){
 
 int main(){
 	int n;
-	int fib[13];
+	int fib[38];
 	
-	for(int i=0;i<=13;i++){
+	for(int i=0;i<38;i++){
 		fib[i] = f(i);
 	}
 	while(cin>>n){
@@ -27,14 +27,14 @@ int main(){
 			bool one=false;
 			cin>>num;
 			vector<int> dec;
-			for(int j=13;j>=0;j--){
+			cout<<time+1<<" = ";
+			for(int j=37;j>=0;j--){
 				if(num-fib[j]>=0){
 					dec.push_back(1);
 					num-=fib[j];
 				}
 				else dec.push_back(0);
 			}
-			cout<<time+1<<" = ";
 			for(int j=0;j<dec.size();j++){
 				if(dec[j]==1)one=true;
 				if(one)cout<<dec[j];
