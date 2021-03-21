@@ -27,7 +27,7 @@ int main(){
 			bool one=false;
 			cin>>num;
 			vector<int> dec;
-			cout<<time+1<<" = ";
+			cout<<num<<" = ";
 			for(int j=37;j>=0;j--){
 				if(num-fib[j]>=0){
 					dec.push_back(1);

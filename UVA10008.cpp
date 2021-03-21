@@ -19,7 +19,7 @@ int main(){
 			if(c == '\n'){
 				enterNum++;
 			}
-			else if(c>='A' && c<='z'){
+			else if((c>='A' && c<='Z')||(c>='a' && c<='z')){
 				latters[toupper(c)]++;
 				maxin = max(maxin,latters[toupper(c)]);
 				minin = min(minin,latters[toupper(c)]);
