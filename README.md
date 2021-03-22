@@ -4,9 +4,13 @@
 
 # 宣告map : map<dataType, dataType> mapName;
 # insert : mapName[index] = data;
-# 尋訪 : 
+# 尋訪(前往後) : 
 # map<dataType, dataType>::iterator iter;
 # for(iter=mapName.begin();iter!=mapName.end();iter++)
+# index為iter->first，data為iter->second
+# 尋訪(後往前) : 
+# map<dataType, dataType>::reverse_iterator iter;
+# for(iter=mapName.rbegin();iter!=mapName.rend();iter++)
 # index為iter->first，data為iter->second
 
 # 找出string中的index可用string.find('string',起始位址(0));
