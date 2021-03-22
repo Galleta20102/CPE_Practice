@@ -26,3 +26,6 @@
 
 # 將值以特定進制轉換為十進制
 # strtol(char[], NULL, int base);
+
+# 限制顯示的小數點位數(ex: 顯示三位並補0)
+# cout<<fixed<<setprecision(3)<<(double data);
