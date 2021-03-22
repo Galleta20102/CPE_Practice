@@ -33,3 +33,8 @@
 
 # 限制顯示的小數點位數(ex: 顯示三位並補0)
 # cout<<fixed<<setprecision(3)<<(double data);
+
+# 骰子構造
+# 2
+# 1 4 6 3
+# 5
