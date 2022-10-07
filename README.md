@@ -22,7 +22,7 @@ index 為 `iter->first`，data 為 `iter->seCpp=ond`
 #### 尋訪(後往前) : 
 ```cpp=
 map<dataType, dataType>::reverse_iterator iter;
-for(iter = mapName. **rbegin()** ; iter != mapName **.rend()** ; iter++)
+for(iter = mapName.rbegin(); iter != mapName.rend(); iter++)
 ```
 index 為 `iter->first`，data 為 `iter->second`
 
