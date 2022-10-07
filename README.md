@@ -1,6 +1,4 @@
-# CPE_Practice
-
-# 個人 CPE 檢定練習
+# CPE_Practice ： 個人 CPE 檢定練習
 
 ## 個人筆記
 
@@ -8,43 +6,57 @@
 
 ### map 使用：
 #### 宣告 map
-```c=
+```c
 map<dataType, dataType> mapName;
 ```
 #### insert : 
-```c=
+```c
 mapName[index] = data;
 ```
 #### 尋訪(前往後) :
-```c= 
+```c
 map<dataType, dataType>::iterator iter;
-for(iter=mapName.begin();iter!=mapName.end();iter++)
+for(iter = mapName.begin(); iter != mapName.end(); iter++)
 ```
-#### index 為 'iter->first'，data 為 'iter->second'
-# 尋訪(後往前) : 
-# map<dataType, dataType>::reverse_iterator iter;
-# for(iter=mapName.rbegin();iter!=mapName.rend();iter++)
-# index為iter->first，data為iter->second
+index 為 'iter->first'，data 為 'iter->second'
+#### 尋訪(後往前) : 
+```c
+map<dataType, dataType>::reverse_iterator iter;
+for(iter = mapName.**rbegin()**; iter != mapName**.rend()**; iter++)
+```
+index 為 'iter->first'，data 為 'iter->second'
 
-# 找出string中的index可用stringName.find('string',起始位址(0));
+#### 找出 string 中某個 string 的 index 值
+```c
+stringName.find('[string]');
+```
 
-# 設定輸出小數點
-# cout << fixed << setprecision(4) << 0.12345
-# Output : 0.1235
+#### 設定輸出時的小數點位數
+```c
+cout << fixed << setprecision(4) << 0.12345
+// Output : 0.1235
+```
 
-# 用指標宣告二維陣列
-# int** arr = new int*[m];
-# for(int i=0;i<m;i++)
-#   arr[i] = new int[n];
-# 別忘了釋放位址
-# for(int i=0;i<m;i++)
-#   delete [] *(arr+i);
-# delete [] arr;
+#### 用指標宣告二維陣列空間
+```c
+int** arr = new int*[m];
+for(int i=0;i<m;i++)
+    arr[i] = new int[n];
 
-# 將值以特定進制轉換為十進制
-# strtol(char[], NULL, int base);
+// 使用完畢後別忘了釋放位址
+for(int i=0;i<m;i++)
+    delete [] *(arr+i);
+delete [] arr;
+```
 
-# 骰子構造
-# 2
-# 1 4 6 3
-# 5
+#### 將值以特定進制轉換為十進制
+```c
+strtol(char[], NULL, int base);
+```
+
+#### 骰子構造
+:::success
+[ 2 ]
+[ 1 ][ 4 ][ 6 ][ 3 ]
+[ 5 ]
+:::
