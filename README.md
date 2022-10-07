@@ -18,7 +18,7 @@ mapName[index] = data;
 map<dataType, dataType>::iterator iter;
 for(iter = mapName.begin(); iter != mapName.end(); iter++)
 ```
-index 為 `iter->first`，data 為 `iter->seCpp=ond`
+index 為 `iter->first`，data 為 `iter->second`
 #### 尋訪(後往前) : 
 ```cpp=
 map<dataType, dataType>::reverse_iterator iter;
