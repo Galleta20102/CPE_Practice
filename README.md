@@ -1,19 +1,32 @@
 # CPE_Practice
 
-# 注意! cin.get()才可以讀空白字元' '跟換行'\n'，一般cin只能讀個個資料
+# 個人 CPE 檢定練習
 
-# 宣告map : map<dataType, dataType> mapName;
-# insert : mapName[index] = data;
-# 尋訪(前往後) : 
-# map<dataType, dataType>::iterator iter;
-# for(iter=mapName.begin();iter!=mapName.end();iter++)
-# index為iter->first，data為iter->second
+## 個人筆記
+
+注意! cin.get()才可以讀空白字元' '跟換行'\n'，一般cin只能讀個個資料
+
+### map 使用：
+#### 宣告 map
+```c=
+map<dataType, dataType> mapName;
+```
+#### insert : 
+```c=
+mapName[index] = data;
+```
+#### 尋訪(前往後) :
+```c= 
+map<dataType, dataType>::iterator iter;
+for(iter=mapName.begin();iter!=mapName.end();iter++)
+```
+#### index 為 'iter->first'，data 為 'iter->second'
 # 尋訪(後往前) : 
 # map<dataType, dataType>::reverse_iterator iter;
 # for(iter=mapName.rbegin();iter!=mapName.rend();iter++)
 # index為iter->first，data為iter->second
 
-# 找出string中的index可用string.find('string',起始位址(0));
+# 找出string中的index可用stringName.find('string',起始位址(0));
 
 # 設定輸出小數點
 # cout << fixed << setprecision(4) << 0.12345
@@ -22,7 +35,7 @@
 # 用指標宣告二維陣列
 # int** arr = new int*[m];
 # for(int i=0;i<m;i++)
-#   arr[i] = new int*[n];
+#   arr[i] = new int[n];
 # 別忘了釋放位址
 # for(int i=0;i<m;i++)
 #   delete [] *(arr+i);
@@ -30,9 +43,6 @@
 
 # 將值以特定進制轉換為十進制
 # strtol(char[], NULL, int base);
-
-# 限制顯示的小數點位數(ex: 顯示三位並補0)
-# cout<<fixed<<setprecision(3)<<(double data);
 
 # 骰子構造
 # 2
