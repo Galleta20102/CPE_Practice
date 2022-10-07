@@ -44,6 +44,7 @@ for(int i=0;i<m;i++)
     arr[i] = new int[n];
 
 // 使用完畢後別忘了釋放位址
+
 for(int i=0;i<m;i++)
     delete [] *(arr+i);
 delete [] arr;
@@ -55,6 +56,6 @@ strtol(char[], NULL, int base);
 ```
 
 #### 骰子構造
-[ 2 ]
-[ 1 ][ 4 ][ 6 ][ 3 ]
-[ 5 ]
+[ 2 ]  
+[ 1 ][ 4 ][ 6 ][ 3 ]  
+[ 5 ]  
