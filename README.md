@@ -3,6 +3,8 @@
 This project just a Personal Practice of [*C*ollegiate *P*rogramming *E*xamination (CPE)](https://cpe.cse.nsysu.edu.tw/)<br>
 There has list of 1★ questions : [Evironment and Tutorial](https://cpe.cse.nsysu.edu.tw/environment.php)<br>
 
+---
+
 > Here is some Note below
 
 Notice: only `cin.get()` can read non Char `''` and `\n` <br>
