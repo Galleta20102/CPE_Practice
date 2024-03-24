@@ -33,18 +33,18 @@ map<dataType, dataType>::reverse_iterator iter;
 for(iter = mapName.rbegin(); iter != mapName.rend(); iter++)
 ```
 
-#### find the index of substring from string
+### find the index of substring from string
 ```cpp
 stringName.find('[string]');
 ```
 
-#### set the output fixed point
+### set the output fixed point
 ```cpp
 cout << fixed << setprecision(4) << 0.12345;
 // Output : 0.1235
 ```
 
-#### declare 2d-Array by pointer
+### declare 2d-Array by pointer
 ```cpp
 int** arr = new int*[m];
 for(int i=0;i<m;i++)
@@ -57,12 +57,21 @@ for(int i=0;i<m;i++)
 delete [] arr;
 ```
 
-#### convert value from n-base to decimal
+### convert value from n-base to decimal
 ```cpp=
 strtol(char[], NULL, int base);
 ```
+### auto ([reference](https://blog.gtwang.org/programming/cpp-auto-variable-tutorial/))
+`auto` is a flexible data type
+```cpp
+vector<int> v = {0, 1, 2, 3};
+for (auto& x : v) {
+    std::cout<<x+1<<' ';
+}
+// Output : 1 2 3 4
+```
 
-#### structure of dice
+### structure of dice
 [ 2 ]  
 [ 1 ][ 4 ][ 6 ][ 3 ]  
 [ 5 ]  
