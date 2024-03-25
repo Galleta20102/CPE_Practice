@@ -126,7 +126,7 @@ for (auto& x : v) {
 `INT_MAX` is a max value of integer.
 `INT_MIN` is a max value of integer.
 
-### (Sort)[https://shengyu7697.github.io/std-sort/] :
+### [Sort](https://shengyu7697.github.io/std-sort/) :
 - array
 ```cpp
 int arr[] = {4, 5, 8, 3, 7, 1, 2, 6, 10, 9};
@@ -135,7 +135,8 @@ sort(arr, arr+10 /*, less<int>*/);
 // method 1
 sort(begin(arr), end(arr) /*, greater<int>*/);
 ```
-> `less<Type>`:< , `less_equal<Type>`:<=,  `greater<Type>`:>, `greater_equal<Type>`:>=
+> `less<Type>` with `<` ; `less_equal<Type>` with `<=` <br>
+> `greater<Type>` with `>` ; `greater_equal<Type>` with `>=` <br>
 > `Type` also can use `char` to sort string
 vector
 - sort (less first)
@@ -155,7 +156,7 @@ bool mycompare(int a, int b) {
 sort(v.begin(), v.end(), mycompare);
 ```
 
-### (Random)[https://blog.gtwang.org/programming/c-cpp-rand-random-number-generation-tutorial-examples/] :
+### [Random](https://blog.gtwang.org/programming/c-cpp-rand-random-number-generation-tutorial-examples/) :
 `rand()` will output a integer from 0 to `RAND_MAX`
 ```cpp
 // seed
@@ -174,7 +175,7 @@ double min = 3.6;
 double max = 7.8;
 double x = (max - min) * rand() / (RAND_MAX + 1.0) + min;
 ```
->  `RAND_MAX` = 32767
+>  RAND_MAX = 32767
 
 ## Algorithm
 ### Euclidean algorithm (get GCD)
