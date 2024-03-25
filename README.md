@@ -39,13 +39,12 @@ mapName[index] = data;
 ```
 - iterating :
 `iter->first` : index , `iter->second` : data <br>
-forward
 ```cpp
+// forward
 map<dataType, dataType>::iterator iter;
 for(iter = mapName.begin(); iter != mapName.end(); iter++)
-```
-backward
-```cpp
+
+// backward
 map<dataType, dataType>::reverse_iterator iter;
 for(iter = mapName.rbegin(); iter != mapName.rend(); iter++)
 ```
