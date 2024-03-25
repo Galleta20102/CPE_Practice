@@ -7,61 +7,64 @@ Here is some Note below . . .
 
 ---
 
-
+## String & I/O
 Notice: only `cin.get()` can read non Char `''` and `\n` <br>
 
-## Map ：
-#### declare Map
-```cpp
-map<dataType, dataType> mapName;
-```
-#### asign data : 
-```cpp
-mapName[index] = data;
-```
-#### iterating :
-`iter->first` : index <br>
-`iter->second` : data <br>
-- forward
-```cpp
-map<dataType, dataType>::iterator iter;
-for(iter = mapName.begin(); iter != mapName.end(); iter++)
-```
-- backward
-```cpp
-map<dataType, dataType>::reverse_iterator iter;
-for(iter = mapName.rbegin(); iter != mapName.rend(); iter++)
-```
-
-## find the index of substring from string
-```cpp
-stringName.find('[string]');
-```
-
-## set the output fixed point
+### set the output fixed point
 ```cpp
 cout << fixed << setprecision(4) << 0.12345;
 // Output : 0.1235
 ```
 
-## declare 2d-Array by pointer
+### find the index of substring from string
+```cpp
+int substr_index = str_variable.find('[substr]');
+```
+If nott found, then `substr_index = str_variable.npos`
+### [convert string from n-base to long int (decimal)](https://blog.csdn.net/qq_41822647/article/details/102838860)
+```cpp
+long dec_num = strtol([string], NULL, int [base]);
+// if string=0321, base=8 then output 209
+```
+
+## Data ：
+### Map
+- declare Map
+```cpp
+map<dataType, dataType> mapName;
+```
+- asign data : 
+```cpp
+mapName[index] = data;
+```
+- iterating :
+`iter->first` : index , `iter->second` : data <br>
+forward
+```cpp
+map<dataType, dataType>::iterator iter;
+for(iter = mapName.begin(); iter != mapName.end(); iter++)
+```
+backward
+```cpp
+map<dataType, dataType>::reverse_iterator iter;
+for(iter = mapName.rbegin(); iter != mapName.rend(); iter++)
+```
+
+### Array
+declare 2d-Array by pointer
 ```cpp
 int** arr = new int*[m];
 for(int i=0;i<m;i++)
     arr[i] = new int[n];
 
 // Don't forget release address after using!
-
 for(int i=0;i<m;i++)
     delete [] *(arr+i);
 delete [] arr;
 ```
 
-## convert value from n-base to decimal
-```cpp=
-strtol(char[], NULL, int base);
-```
-## auto ([reference](https://blog.gtwang.org/programming/cpp-auto-variable-tutorial/))
+
+### [auto](https://blog.gtwang.org/programming/cpp-auto-variable-tutorial/))
 `auto` is a flexible data type
 ```cpp
 vector<int> v = {0, 1, 2, 3};
