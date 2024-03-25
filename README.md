@@ -63,7 +63,7 @@ delete [] arr;
 ```
 
 
-### [auto](https://blog.gtwang.org/programming/cpp-auto-variable-tutorial/))
+### [auto](https://blog.gtwang.org/programming/cpp-auto-variable-tutorial/)
 `auto` is a flexible data type
 ```cpp
 vector<int> v = {0, 1, 2, 3};
