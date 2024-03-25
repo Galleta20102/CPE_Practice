@@ -37,7 +37,7 @@ map<dataType, dataType> mapName;
 ```cpp
 mapName[index] = data;
 ```
-- iterating :
+- iterating :<br>
 `iter->first` : index , `iter->second` : data <br>
 ```cpp
 // forward
