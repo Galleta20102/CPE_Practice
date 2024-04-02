@@ -32,7 +32,7 @@ double str2f =  atof( const char *str);
 //method 2
 int sum=0;
 for(int i=0;i<str.length();i++){
-	sum += (str[i]-'0');
+	sum = sum*10 + (str[i]-'0');
 }
 ```
 
