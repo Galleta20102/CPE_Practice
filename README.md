@@ -122,8 +122,8 @@ for (auto& x : v) {
 // Output : 1 2 3 4
 ```
 ## Point
-### Pointer to Function
-- declare
+### [Pointer to Function](https://medium.com/@racktar7743/c%E8%AA%9E%E8%A8%80-function-pointer%E4%BB%8B%E7%B4%B9-aac6c75f2a06)
+- declare <br>
 There has some function, you can point to them
 ```cpp
 // 2 difference function
@@ -133,7 +133,7 @@ void func2(int int2, char char2);
 // Assign one function you want to call
 void (*funcPtr1)(int, char) = &func1; // or &func2
 ```
-- use
+- use <br>
 After assignment, you can directly run this Funtion Pointer
 ```cpp
 returnValue = funcPtr1(intArg, charArg);
