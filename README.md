@@ -121,6 +121,24 @@ for (auto& x : v) {
 }
 // Output : 1 2 3 4
 ```
+## Point
+### Pointer to Function
+- declare
+There has some function, you can point to them
+```cpp
+// 2 difference function
+void func1(int int1, char char1);
+void func2(int int2, char char2);
+
+// Assign one function you want to call
+void (*funcPtr1)(int, char) = &func1; // or &func2
+```
+- use
+After assignment, you can directly run this Funtion Pointer
+```cpp
+returnValue = funcPtr1(intArg, charArg);
+```
+
 ## Function
 ### max/min value :
 `INT_MAX` is a max value of integer.
